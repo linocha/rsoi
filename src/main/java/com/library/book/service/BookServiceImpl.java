@@ -51,7 +51,7 @@ public class BookServiceImpl
                 .findById(id)
                 .map(this::buildBookInfoResponse)
                 .orElseThrow(() -> new EntityNotFoundException(format("No book with uid '%s'", id)));
-        
+
     }
 
     @Nonnull
