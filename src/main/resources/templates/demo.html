@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Students</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h3>Books</h3>
+<p>
+    We have a total of <span th:text="${books.size()}"></span> books in this app.
+</p>
+
+<ul th:each="book : ${books}">
+    <li th:text="${book.title}"></li>
+</ul>
+
+</body>
+</html>
