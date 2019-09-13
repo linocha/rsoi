@@ -7,13 +7,13 @@
 </head>
 
 <body>
-<h3>Students</h3>
+<h3>Books</h3>
 <p>
-    We have a total of <span th:text="${students.size()}"></span> students in this app.
+    We have a total of <span th:text="${books.size()}"></span> books in this app.
 </p>
 
-<ul th:each="student : ${students}">
-    <li th:text="${student.name}"></li>
+<ul th:each="book : ${books}">
+    <li th:text="${book.title}"></li>
 </ul>
 
 </body>
