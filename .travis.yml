@@ -4,3 +4,10 @@ jdk:
 
 script: ./gradlew clean build
 
+deploy:
+  provider: heroku
+  api_key: 8359be78-57e7-43b6-b2c5-74c6ecc6e620
+  app: rsoi-l1
+
+notifications:
+  email: false
