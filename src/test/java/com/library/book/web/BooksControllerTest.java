@@ -92,22 +92,6 @@ public class BooksControllerTest {
     }
 
 
-//    @Test
-//    void bookNotFound()
-//        throws Exception {
-//        final BookInfoResponse book = new BookInfoResponse()
-//                .setId(18)
-//                .setBookUid(UUID.randomUUID())
-//                .setTitle(TITLE1)
-//                .setAuthor(AUTHOR1);
-//
-//        when(booksService.getBookInfo(eq(ID1)))
-//                .thenReturn(book);
-//
-//
-//    }
-
-
 
 
 }
