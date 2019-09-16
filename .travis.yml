@@ -2,7 +2,19 @@ language: java
 jdk:
   - openjdk11
 
-script: ./gradlew clean build
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script: ./gradlew clean build
+
+test:
+  stage: test
+  script: ./gradlew clean test
 
 deploy:
   provider: heroku
