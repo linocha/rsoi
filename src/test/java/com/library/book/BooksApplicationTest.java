@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ActiveProfiles("test-db")
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-class DeployApplicationTest {
+class BooksApplicationTest {
 
     @Autowired
     private BooksController booksController;
