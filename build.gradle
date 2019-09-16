@@ -50,6 +50,10 @@ dependencies {
     compile "com.google.code.findbugs:jsr305:${findbugsVersion}"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
+
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.junit.jupiter:junit-jupiter-api"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine"
 }
 
 springBoot {
