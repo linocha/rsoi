@@ -14,7 +14,7 @@ $ psql -h localhost -U postgres
 > GRANT ALL PRIVILEGES ON database book_database TO zina;
 > ALTER role program WITH login;
 > /q
-$ psql -h localhost -U program javademo
+$ psql -h localhost -U zina book_database
 ```
 
 Запуск происходит как standalone приложение.
